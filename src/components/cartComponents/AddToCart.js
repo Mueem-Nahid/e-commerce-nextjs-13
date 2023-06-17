@@ -2,7 +2,9 @@
 
 import Cookies from 'js-cookie';
 import {useState} from "react";
-import ToastComponent from "@/components/toast/ToastComponent";
+import dynamic from "next/dynamic";
+
+const ToastComponent = dynamic(() => import("../toast/ToastComponent"), { ssr: false });
 
 const AddToCart = ({productDetails}) => {
    const [showToast, setShowToast] = useState(false);

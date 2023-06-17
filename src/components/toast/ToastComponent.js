@@ -6,7 +6,8 @@ import {initTE, Toast} from "tw-elements";
 const ToastComponent = () => {
    useEffect(() => {
       initTE({Toast});
-   }, [])
+   }, []);
+
    return (
       <div className="mt-5">
          <div

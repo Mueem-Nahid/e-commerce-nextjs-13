@@ -1,9 +1,5 @@
 "use client"
-import {
-   Collapse,
-   Dropdown,
-   initTE,
-} from "tw-elements";
+import {Collapse, Dropdown, initTE} from "tw-elements";
 import {useEffect} from "react";
 import Link from "next/link";
 
@@ -11,7 +7,8 @@ import Link from "next/link";
 const Navbar = () => {
    useEffect(() => {
       initTE({Collapse, Dropdown});
-   }, [])
+   }, []);
+
    return (
       <nav
          className="flex-no-wrap relative flex w-full items-center justify-between bg-neutral-100 py-2 shadow-md shadow-black/5 dark:bg-neutral-600 dark:shadow-black/10 lg:flex-wrap lg:justify-start lg:py-4"

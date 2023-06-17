@@ -2,13 +2,12 @@
 
 import {useEffect, useState} from "react";
 import Cookies from 'js-cookie';
-import CartItem from "@/components/cart/CartItem";
+import CartItem from "@/components/cartComponents/CartItem";
 
 export default function CartPage() {
    const [cart, setCart] = useState([]);
 
    useEffect(() => {
-      console.log("here: ", )
       Cookies.get('products') && setCart(JSON.parse(Cookies.get('products')));
    }, [cart?.length])
 

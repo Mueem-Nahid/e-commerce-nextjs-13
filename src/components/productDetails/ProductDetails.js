@@ -1,5 +1,5 @@
 import Rating from "@/components/rating/Rating";
-import AddToCart from "@/components/cart/AddToCart";
+import AddToCart from "@/components/cartComponents/AddToCart";
 
 
 const ProductDetails = ({productDetails}) => {
