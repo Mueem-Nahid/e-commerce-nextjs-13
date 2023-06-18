@@ -17,7 +17,7 @@ const ProductCard = ({product, newProduct}) => {
                   {product.category}
                </div>
             </div>
-            <Link href={`/product/${product.id}`} className="cursor-pointer">
+            <Link href={`/product/${product.id}`} className="cursor-pointer hover:underline">
                <h4 className="mt-1 font-semibold text-lg leading-tight truncate">{product.title}</h4>
             </Link>
             <div className="mt-1">
